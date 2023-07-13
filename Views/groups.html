@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-6 text-center">
             <div class="display-6 mb-2">Michel Goldberg Jazz Quartet</div>
-            <div class="quartet">
+            <div class="imgg">
                 <a href="/Groupes/Michel-Goldberg-Jazz-Quartet.php">
                     <img src="/Data/Images/MG-jazz-quartet.jpg" style="height: 400px;">
                 </a>
@@ -14,23 +14,31 @@
         </div>
         <div class="col-6 text-center">
             <div class="display-6 mb-2">GOLDBERG(S)</div>
-            <a href="/Groupes/GOLDBERG(S).php"><img class="duo" src="/Data/Images/goldberg(s).jpg"
-                    style="height: 400px;"></a>
+            <div class="imgg">
+                <a href="/Groupes/GOLDBERG(S).php">
+                    <img class="duo" src="/Data/Images/goldberg(s).jpg" style="height: 400px;">
+                </a>
+            </div>
         </div>
     </div>
 </div>
 <style>
-    .quartet {
+    .imgg {
         background: #ffffff;
         display: inline-block;
     }
 
-    .quartet img {
+    .imgg img {
         -transition: opacity 0.9s;
     }
 
-    .quartet img:hover {
+    .imgg img:hover {
         opacity: 0.2;
         transition: 0.7s;
+    }
+
+    .imgg:not(:hover) img {
+        opacity: 1;
+        transition: 0.9s;
     }
 </style>
