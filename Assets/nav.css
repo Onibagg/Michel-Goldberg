@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Montserrat", sans-serif; */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #E0D8DE;
+    color: #9e0059;
+}
+
+.nav-links a {
+    color: #9e0059;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu > li:hover {
+    background-color: #E0D8DE;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #9e0059; /* Ajout de cette ligne */
+}
+
+.menu li {
+    padding: 3px 14px;
+}
+
+/* DROPDOWN MENU */
+.groups {
+    position: relative;
+}
+
+.dropdown_groups {
+    background-color: #E0D8DE;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9e0059;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+    top: 35px;
+}
+
+.dropdown_groups li+li {
+    margin-top: 10px;
+}
+
+.dropdown_groups li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown_groups li:hover {
+    text-decoration: underline;
+}
+
+.groups:hover .dropdown_groups {
+    display: block;
+}
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #000000;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown_groups {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown_groups li:hover {
+        background-color: #ff0000;
+    }
+}
