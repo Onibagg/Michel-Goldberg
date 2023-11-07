@@ -1,24 +1,26 @@
 body {
     font-family: 'Open Sans', sans-serif;
-  }
-  
-  /* Exemple de règle de style pour utiliser la police Montserrat Alternates en gras */
-  h1 {
+}
+
+h1 {
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 700;
-  }
-  
-  /* Exemple de règle de style pour utiliser la police Merriweather en italique */
-  p {
-    font-family: 'Merriweather', serif;
-    font-style: italic;
-  }
+}
 
-  .Style2 {
-    font-family:  'MontserratAlternates-Bold', 'Montserrat Alternates' ;
-    font-size: 48px; 
-    font-weight:700; 
+.Style2 {
+    font-family: 'MontserratAlternates-Bold', 'Montserrat Alternates';
+    font-size: 48px;
+    font-weight: 700;
     color: #941651;
-    background-color: #FFFEFE; 
+    background-color: #FFFEFE;
+    word-wrap: break-word;
+}
+
+.Style4 {
+    font-family: 'MontserratAlternates-Bold', 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 700;
+    color: #941651;
+    background-color: #FFFEFE;
     word-wrap: break-word;
 }

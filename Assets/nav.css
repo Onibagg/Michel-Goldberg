@@ -67,6 +67,7 @@ li {
     display: none;
     border-radius: 5px;
     top: 35px;
+    
 }
 
 .dropdown_groups li+li {
