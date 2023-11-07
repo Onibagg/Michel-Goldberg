@@ -19,6 +19,7 @@ li {
 
 /* NAVBAR STYLING STARTS */
 .navbar {
+    z-index: 1000;
     border-radius: 12px;
     display: flex;
     padding: 20px;
@@ -106,7 +107,7 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: rgb(0, 0, 0);
+        background-color: #E0D8DE;
         right: 0;
         left: 0;
         text-align: center;
@@ -115,7 +116,7 @@ input[type=checkbox] {
 
     .menu li:hover {
         display: inline-block;
-        background-color: #000000;
+        background-color: #E0D8DE;
         transition: 0.3s ease;
     }
 
