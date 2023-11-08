@@ -1,7 +1,7 @@
 <?php
 include("../../Models/setup.php");
-setup("Méthodes");
+setup("Méthode de Jazz - Vol. 2");
 include("../../Views/nav.html");
-include("../../Views/methodes.html");
+include("../../Views/mdsv1.html");
 include("../../Views/bottom-bar.html");
 ?>
