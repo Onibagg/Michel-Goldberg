@@ -79,16 +79,16 @@ html::-webkit-scrollbar {
     /* display: inline-block; */
 }
 
-.methode-img img {
+.pfiouuu img {
     -transition: opacity 0.9s;
 }
 
-.methode-img img:hover {
+.pfiouuu img:hover {
     opacity: 0.2;
     transition: 0.7s;
 }
 
-.methode-img:not(:hover) img {
+.pfiouuu:not(:hover) img {
     opacity: 1;
     transition: 0.9s;
 }
