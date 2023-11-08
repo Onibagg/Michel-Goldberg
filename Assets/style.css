@@ -18,9 +18,13 @@ html {
 }
 
 
-h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
+.Style5 {
+    font-family: 'MontserratAlternates-Bold', 'Montserrat Alternates';
+    font-size: 18px;
     font-weight: 700;
+    color: #000000;
+    background-color: #FFFEFE;
+    /* word-wrap: break-word; */
 }
 
 .Style2 {

@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="musiic.css">
-<script src="musiic.js"></script>
 <div class="container">
     <div class="column add-bottom">
         <div id="mainwrap">
@@ -24,3 +23,5 @@
         <p>Download: <a href="https://archive.org/download/mythium/mythium_vbr_mp3.zip">zip</a> / <a href="https://archive.org/download/mythium/mythium_archive.torrent">torrent</a></p>
     </div>
 </div>
+
+<script src="musiic.js"></script>
