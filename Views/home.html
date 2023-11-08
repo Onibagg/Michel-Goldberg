@@ -1,4 +1,107 @@
-<div id="fb-root"></div>
+<div class="bg">
+  <nav class="navbar ms-3 me-3 mt-3 mb-3">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="/"
+        ><img src="../Data/Images/logomg.png" style="height: 80px" class="ms-2"
+      /></a>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="/">Home</a></li>
+        <li class="groups">
+          <a href="/Biographie">Ma bio</a>
+          <ul class="dropdown_groups">
+            <li><a href="../Biographie#cv-musical">CV musical</a></li>
+            <li><a href="../Biographie#discographie">Discographie</a></li>
+            <li><a href="../Biographie#cv-pedagogique">CV pédagogique</a></li>
+            <li><a href="../Biographie#reseaux-sociaux">Réseaux sociaux</a></li>
+          </ul>
+        </li>
+
+        <li class="groups">
+          <a href="/Groupes/">Mes groupes</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown_groups">
+            <li>
+              <a href="../Groupes/Michel-Goldberg-Jazz-Quartet"
+                >Michel Goldberg Jazz quartet</a
+              >
+            </li>
+            <li><a href="../Groupes/GOLDBERG(S)">GOLDBERG(S)</a></li>
+          </ul>
+        </li>
+
+        <li class="groups">
+          <a href="/Enregistrement">Enregistrements</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown_groups">
+            <li>
+              <a href="../Enregistrements/Family-Business">Family Business</a>
+            </li>
+            <li>
+              <a href="../Enregistrements/Pure-imagination">Pure imagination</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="groups">
+          <a href="../Enseignement">Enseignement</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown_groups">
+            <li><a href="../Enseignements/ARPEJ">ARPEJ</a></li>
+            <li>
+              <a href="../Enseignements/Cours-de-Jazz-en-ligne"
+                >Cours de Jazz en ligne</a
+              >
+            </li>
+            <li><a href="../Enseignements/Methodes">Méthodes</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/Contact">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <nav class="navbar ms-3 me-3 mt-3" style="z-index: 0">
+    <div class="row w-100">
+      <div class="col-9 p-3">
+        <a href="https://https://www.arpej-jazz.asso.fr/"
+          ><img src="../Data/Images/arpej.png" style="width: 150px"
+        /></a>
+        <a
+          href="https://www.outre-mesure.net/achat/produits_auteur.php?catid=Goldberg,%20Michel"
+          ><img src="../Data/Images/outremesure.png" style="width: 90px"
+        /></a>
+        <a href="https://www.selmer.fr/?LANGUE=fr"
+          ><img
+            src="../Data/Images/Henri_Selmer_Paris_logo.png"
+            style="width: 120px"
+        /></a>
+        <a href="https://vandoren.fr/fr/artistes-vandoren/goldberg-michel/"
+          ><img src="../Data/Images/vandoren.png" style="width: 150px"
+        /></a>
+      </div>
+      <div class="col-3 p-3">Michel Goldberg ©<span id="year"></span></div>
+    </div>
+  </nav>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+</div>
+
+<!-- <div id="fb-root"></div>
 <script
   async
   defer
@@ -10,7 +113,7 @@
   class="fb-page"
   data-href="https://www.facebook.com/michelgoldbergjazz"
   data-tabs="timeline"
-  data-width="180"
+  data-width="500"
   data-height="500"
   data-small-header="false"
   data-adapt-container-width="true"
@@ -25,4 +128,4 @@
       >Michel Goldberg : musicien de jazz</a
     >
   </blockquote>
-</div>
+</div> -->

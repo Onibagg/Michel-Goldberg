@@ -1,6 +1,22 @@
-body {
-    font-family: 'Open Sans', sans-serif;
+body,
+html {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
 }
+
+.bg {
+    /* The image used */
+    background-image: url("/Data/Images/MG-extanded.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 h1 {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -11,7 +27,7 @@ h1 {
     font-family: 'MontserratAlternates-Bold', 'Montserrat Alternates';
     font-size: 48px;
     font-weight: 700;
-    color: #941651;
+    color: #9e0059;
     background-color: #FFFEFE;
     word-wrap: break-word;
 }
@@ -20,7 +36,12 @@ h1 {
     font-family: 'MontserratAlternates-Bold', 'Montserrat Alternates';
     font-size: 20px;
     font-weight: 700;
-    color: #941651;
+    color: #9e0059;
     background-color: #FFFEFE;
     word-wrap: break-word;
+}
+
+.carousel-container {
+    max-width: 400px;
+    margin: auto;
 }
