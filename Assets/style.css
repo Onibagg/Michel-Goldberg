@@ -2,14 +2,6 @@ body,
 html {
     height: 100%;
     background-color: rgb(255, 255, 255);
-    /* -ms-overflow-style: none; */
-    /* IE and Edge */
-    /* scrollbar-width: none; */
-    /* Firefox */
-    /* }
-body,
-html::-webkit-scrollbar {
-    display: none; */
 }
 
 :root::-webkit-scrollbar {
@@ -26,10 +18,8 @@ html::-webkit-scrollbar {
 .bg {
     /* The image used */
     background-image: url("/Data/Images/MG-extanded.png");
-
     /* Full height */
     height: 100%;
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -91,4 +81,9 @@ html::-webkit-scrollbar {
 .pfiouuu:not(:hover) img {
     opacity: 1;
     transition: 0.9s;
+}
+
+
+.carousel-caption h3 {
+    color: #000000;
 }
