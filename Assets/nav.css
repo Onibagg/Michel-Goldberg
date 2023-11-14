@@ -46,7 +46,7 @@ li {
 .menu > li:hover {
     background-color: #E0D8DE;
     border-radius: 5px;
-    box-shadow: inset 0 0 0 1px #9e0059; /* Ajout de cette ligne */
+    box-shadow: inset 0 0 0 1px #9e0059;
 }
 
 .menu li {
