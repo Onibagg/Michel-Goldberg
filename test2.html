@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Test 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      /* NAVBAR STYLING STARTS */
+      .navbar {
+        z-index: 1000;
+        border-radius: 12px;
+        display: flex;
+        padding: 20px;
+        background-color: #e0d8de;
+        color: #9e0059;
+      }
+
+      .nav-links a {
+        color: #9e0059;
+      }
+
+      /* LOGO */
+      .logo {
+        font-size: 32px;
+      }
+
+      /* NAVBAR MENU */
+      .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+      }
+
+      .menu > li:hover {
+        background-color: #e0d8de;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 1px #9e0059;
+      }
+
+      .menu li {
+        padding: 3px 14px;
+      }
+
+      /* DROPDOWN MENU */
+      .groups {
+        position: relative;
+      }
+
+      .dropdown_groups {
+        background-color: #e0d8de;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #9e0059;
+        padding: 1em 0;
+        position: absolute;
+        display: none;
+        border-radius: 5px;
+        top: 35px;
+      }
+
+      .dropdown_groups li + li {
+        margin-top: 10px;
+      }
+
+      .dropdown_groups li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+      }
+
+      .dropdown_groups li:hover {
+        text-decoration: underline;
+      }
+
+      .groups:hover .dropdown_groups {
+        display: block;
+      }
+
+      /* CHECKBOX HACK */
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      /* HAMBURGER MENU */
+      .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+      }
+
+      /* APPLYING MEDIA QUERIES */
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
+          position: absolute;
+          background-color: #e0d8de;
+          right: 0;
+          left: 0;
+          text-align: center;
+          padding: 16px 0;
+        }
+
+        .menu li:hover {
+          display: inline-block;
+          background-color: #e0d8de;
+          transition: 0.3s ease;
+        }
+
+        .menu li + li {
+          margin-top: 12px;
+        }
+
+        input[type="checkbox"]:checked ~ .menu {
+          display: block;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        .dropdown_groups {
+          left: 50%;
+          top: 30px;
+          transform: translateX(35%);
+        }
+
+        .dropdown_groups li:hover {
+          background-color: #ff0000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar ms-3 me-3 mt-3 mb-3 fixed-top">
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="/"
+          ><img
+            src="../../Data/Images/logomg.png"
+            style="height: 80px"
+            class="ms-2"
+        /></a>
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <li class="groups">
+            <a href="/Biographie">Ma bio</a>
+            <ul class="dropdown_groups">
+              <li><a href="../Biographie#cv-musical">CV musical</a></li>
+              <li><a href="../Biographie#discographie">Discographie</a></li>
+              <li><a href="../Biographie#cv-pedagogique">CV pédagogique</a></li>
+              <li>
+                <a href="../Biographie#reseaux-sociaux">Réseaux sociaux</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="groups">
+            <a href="/Groupes/">Mes groupes</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown_groups">
+              <li>
+                <a href="../Groupes/Michel-Goldberg-Jazz-Quartet"
+                  >Michel Goldberg Jazz quartet</a
+                >
+              </li>
+              <li><a href="../Groupes/GOLDBERG(S)">GOLDBERG(S)</a></li>
+            </ul>
+          </li>
+
+          <li class="groups">
+            <a href="/Enregistrement">Enregistrements</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown_groups">
+              <li>
+                <a href="../Enregistrements/Family-Business">Family Business</a>
+              </li>
+              <li>
+                <a href="../Enregistrements/Pure-imagination"
+                  >Pure imagination</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="groups">
+            <a href="../Enseignement">Enseignement</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown_groups">
+              <li><a href="../Enseignements/ARPEJ">ARPEJ</a></li>
+              <li>
+                <a href="../Enseignements/Cours-de-Jazz-en-ligne"
+                  >Cours de Jazz en ligne</a
+                >
+              </li>
+              <li><a href="../Enseignements/Methodes">Méthodes</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/Contact">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <div style="margin-top: 150px; padding: 15px 15px 2500px; font-size: 20px">
+      <p>
+        Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </body>
+</html>
