@@ -13,10 +13,6 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
-}
-
 /* NAVBAR STYLING STARTS */
 .navbar {
     z-index: 1000;
@@ -25,10 +21,13 @@ li {
     padding: 20px;
     background-color: #E0D8DE;
     color: #9e0059;
+    list-style: none;
+    
 }
 
 .nav-links a {
     color: #9e0059;
+    list-style: none;
 }
 
 /* LOGO */
@@ -44,6 +43,7 @@ li {
 }
 
 .menu > li:hover {
+    list-style: none;
     background-color: #E0D8DE;
     border-radius: 5px;
     box-shadow: inset 0 0 0 1px #9e0059;
@@ -51,6 +51,7 @@ li {
 
 .menu li {
     padding: 3px 14px;
+    list-style: none;
 }
 
 /* DROPDOWN MENU */
